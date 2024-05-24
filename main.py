@@ -11,7 +11,6 @@ if __name__ == '__main__':
         parser.add_argument('-u', '--url', type=str, help='Video url from uqload', required=True)
         parser.add_argument('-n', '--name', type=str, help='Video name')
 
-        # Read arguments from command line
         args = parser.parse_args()
         
         video = UQLoad(args.url)
@@ -19,7 +18,3 @@ if __name__ == '__main__':
     
     except Exception as ex:
         print(f"{colorama.Fore.LIGHTRED_EX}{ex}")
-
-#https://uqload.com/embed-0zmi1ulf0d60.html
-#https://uqload.com/embed-h63yfu9dkw1r.html
-#python main.py --url "https://uqload.io/embed-ezew7etarzlq.html" --name "My video"

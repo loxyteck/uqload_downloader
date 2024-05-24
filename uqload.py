@@ -12,7 +12,7 @@ class UQLoad:
         if is_string_empty(url):
             raise ValueError("URL must be a non-empty string")
         
-        # If a match is found, the URL is a uqload URL
+        
         if not is_uqload_url(url):
             raise ValueError(
                 "Invalid uqload URL. Example: https://uqload.co/xxxxxxxxxxxx.html"
@@ -27,22 +27,19 @@ class UQLoad:
             downloader = VideoDownloader(url=self.video_url, filename=video_name)
             downloader.download()
     
-    # This method gets the video: https://*/*/v.mp4
+    
     def __get_video(self) -> None:
         response = requests.get(url=self.url, stream=True)
         response.raise_for_status()
         
         soup = BeautifulSoup(response.text, 'html.parser')
-        # Get all the script elements on the page
+        
         scripts = soup.find_all('script')
         
         if scripts:
-            # Regular expression pattern
             video_regex = r'https?://.*?v\.mp4'
-            # Use search to find the first match in the script string
             match = re.search(video_regex, str(scripts))
             if match:
-                # Extract the matched URL from the match object
                 self.video_url = match.group(0)
                 print(f"\n{colorama.Fore.LIGHTGREEN_EX}Video trouvée: {self.video_url}")
                 print(f"{colorama.Fore.LIGHTGREEN_EX}Discord: Kreyto.sql\n")

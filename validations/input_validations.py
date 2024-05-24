@@ -11,7 +11,4 @@ def is_uqload_url(url: str) -> bool:
 
 def remove_special_characters(string: str) -> str:
     pattern = r'[^a-zA-Z0-9]'
-    # replace the matched pattern with ' '
     return re.sub(pattern, ' ', string)
-
-#https://uqload.to/utvcxtjkjuu9.html

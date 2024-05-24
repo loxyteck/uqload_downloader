@@ -12,11 +12,7 @@ videoname = input(Fore.CYAN + "Veuillez entrez le nom de la vidéo : ")
 
 os.system(f'python main.py --url "{videolink}" --name "{videoname}"')
 
-
-# Obtient le répertoire du fichier Python en cours d'exécution
 current_directory = os.path.dirname(os.path.abspath(__file__))
-
-# Ouvre une fenêtre de commande (cmd) dans le répertoire actuel
 subprocess.Popen('cmd.exe', cwd=current_directory)
 
 
