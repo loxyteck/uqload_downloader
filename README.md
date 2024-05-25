@@ -19,11 +19,13 @@
 
 ##  Usage:
 ```
+  * pip install -r requirements.txt in your commands prompt.
   * py automator.py
   * Enter the link of the video
   * Enter the name of the video
   * Downloading...
   * Done...
+  * Add Kreyto.sql for help.
 ```
 
 ## Tricks
