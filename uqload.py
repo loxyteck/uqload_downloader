@@ -42,7 +42,7 @@ class UQLoad:
             if match:
                 self.video_url = match.group(0)
                 print(f"\n{colorama.Fore.LIGHTGREEN_EX}Video trouvée: {self.video_url}")
-                print(f"{colorama.Fore.LIGHTGREEN_EX}Discord: Kreyto.sql\n")
+                print(f"{colorama.Fore.LIGHTGREEN_EX}Discord: Senko.bin\n")
             else:
                 raise Exception("Video Not Found! :(")
         else:
