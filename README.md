@@ -1,4 +1,4 @@
-<h1 align="center">💎UQLOAD DOWNLOADER</h1>
+<h1 align="center">💎UQLOAD DOWNLOADER #2026 </h1>
 
 <p align='center'>
   <b>Star ⭐ if you want more</b><br>
@@ -32,3 +32,4 @@
 ```
   * Add Kaizen.go on DISCORD.
 ```
+
